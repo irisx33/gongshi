@@ -15,7 +15,7 @@ function cal() {
     document.getElementById("result2").innerHTML = xiaodianHaomiao
     var xpDifftime = xiaodianHaomiao - pidianHaomiao
     var jpDifftime = jihuaHaomiao - pidianHaomiao
-    var liyonglv = parseFloat(xpDifftime / jpDifftime).toFixed(2)
+    var liyonglv = parseFloat(xpDifftime / jpDifftime).toFixed(3)
 
     document.getElementById("result3").innerHTML = xpDifftime
     document.getElementById("result4").innerHTML = jpDifftime
