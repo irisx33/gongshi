@@ -1,4 +1,3 @@
-
 function cal() {
     // 计算计划完成时间毫秒数
     var jihua = document.getElementById("jihua").value
@@ -15,9 +14,10 @@ function cal() {
     document.getElementById("result2").innerHTML = xiaodianHaomiao
     var xpDifftime = xiaodianHaomiao - pidianHaomiao
     var jpDifftime = jihuaHaomiao - pidianHaomiao
-    var liyonglv = parseFloat(xpDifftime / jpDifftime).toFixed(2)
+    var liyonglv = parseFloat(xpDifftime / jpDifftime).toFixed(3)
+    var liyonglvB = liyonglv * 100
 
     document.getElementById("result3").innerHTML = xpDifftime
     document.getElementById("result4").innerHTML = jpDifftime
-    document.getElementById("result5").innerHTML = liyonglv
+    document.getElementById("result5").innerHTML = liyonglvB
 }
