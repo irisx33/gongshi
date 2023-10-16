@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #eee;
+}
+
+/* * {
+    border: 1px solid black;
+} */
+
+.yinying {
+    box-shadow:0px 10px 5px 0px rgba(0,0,0,0.2);
+}
+
+.flex {
+    display: flex;
+}
+
+.whiteback {
+    background-color: white;
+}
+/* 
+    主区域占满除侧边栏所有区域
+*/
+.flex1 {
+    flex: 1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+.cebian {
+    width: 200px;
+}
+
+/* 当屏幕小于600px要隐藏侧边栏 */
+@media (max-width: 600px) {
+    .cebian {
+        display: none;
+    }
+    .neirong {
+        flex-direction: column;
+    }
+    /* .gonggao {
+        flex-direction: column;
+    } */
+}
+
+
+.toubu {
+    height: 60px;
+}
+
+.mg8 {
+    margin: 8px;
+}
+
+.mgr8 {
+    margin-right: 8px;
+}
+
+.mgt8 {
+    margin-top: 8px;
+}
+
+.overflow1 {
+    overflow: auto;
+}
+
+.daohang {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    font-size: 14px;
+    color: #666;
+}
+
+.biaoti {
+    padding: 10px 20px;
+    font-size:30px;
+    color: #666;
+}
+
+.juzhong {
+    padding-top:5px;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自动工作总结生成器</title>
+    <link type="text/css" rel="stylesheet" href="../css/autostyle.css" />
+    <script type="text/javascript" src="../js/readline.js"></script>
+</head>
+
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="z-index: 2;" class="whiteback cebian yinying">
+        <!-- 头像栏 -->
+        <div style="padding: 10px; align-items: center; justify-content: center; border-bottom: 1px solid #999"
+            class="flex">
+            <img src="../imgs/touxiang.jpg" width="40px" height="40px" alt="">
+            <div style="margin-left: 10px;">Iris</div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="flex1">
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+        </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+        <!-- 头部栏 -->
+        <div style="z-index: 1;" class="whiteback toubu yinying">
+            <div class="biaoti">自动工作总结生成器</div>
+        </div>
+        <!-- 内容区 -->
+        <div class="flex1 flex overflow1 neirong">
+            <!-- 左区 -->
+            <div style="flex: 1" class="flex column mg8">
+                <!-- 公告区 -->
+                <div class="flex">
+                    <div style="height: 100px" class="flex1 whiteback mgr8 yinying"></div>
+                    <div style="height: 100px" class="flex1 whiteback yinying"></div>
+                </div>
+                <!-- 数据区 -->
+                <div class="flex column">
+                    <div style="height: 900px" class="whiteback mgt8 yinying juzhong">
+                        <textarea id="biaodan" name="myTextarea" placeholder="请输入" cols="55" rows="40" minlength="10"
+                            maxlength="500" required></textarea>
+                        <div>
+                            <button style="margin-top: 10px" type="button" name="myButton" onclick="readline()">
+                                立即生成
+                            </button>
+                        </div>
+                    </div>
+                    <div style="height: 900px" class="whiteback mgt8 yinying juzhong">
+                        <text id="jieguo">
+                    </div>
+                </div>
+            </div>
+            <!-- 右区 -->
+            <!-- <div style="flex: 1" class="flex column"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
