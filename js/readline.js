@@ -5,6 +5,11 @@ function readline() {
     console.log(biaodan);
     var biaoValue = biaodan.value;
     console.log(biaoValue);
+    if (!biaoValue) {
+        console.log("数据为空");
+        biaoValue = '完成公务电话日巡检；\n完成车安防及PIS设备巡查；\n完成工班物资、安全、工单填写及检查，考勤表核对；\n'
+        document.getElementById("biaodan").value = biaoValue;
+    }
     // 处理前数据
     var valueArray = biaoValue.split("\n");
     console.log(valueArray);
