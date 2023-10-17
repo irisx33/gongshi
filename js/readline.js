@@ -2,16 +2,24 @@ function readline() {
     const date = new Date();
     // 读取表单文字
     var biaodan = document.getElementById("biaodan");
+    var biaodanY = document.getElementById("yeban");
     console.log(biaodan);
     var biaoValue = biaodan.value;
+    var YeValue = biaodanY.value
     console.log(biaoValue);
     if (!biaoValue) {
         console.log("数据为空");
-        biaoValue = '完成公务电话日巡检；\n完成车安防及PIS设备巡查；\n完成工班物资、安全、工单填写及检查，考勤表核对；\n'
+        biaoValue = '完成公务电话日巡检；\n完成车安防及PIS设备巡查；\n完成工班物资、安全、工单填写及检查，考勤表核对；'
         document.getElementById("biaodan").value = biaoValue;
+    }
+    if (!YeValue) {
+        console.log("数据为空");
+        YeValue = 'x、x负责x站视频监控系统90天项目升级改造。\nx负责x-x站通信系统轨行区设备年检。'
+        document.getElementById("yeban").value = YeValue;
     }
     // 处理前数据
     var valueArray = biaoValue.split("\n");
+    var YeArray = YeValue.split("\n");
     console.log(valueArray);
     // 处理后数据
     var titleMonth = date.getMonth() + 1;
@@ -26,6 +34,14 @@ function readline() {
         everyValue = (i + 1) + '、' + valueArray[i];
         finalArray.push(everyValue)
     }
+    // 添加夜班安排数据
+    var titleYe = '\n检修夜班安排：'
+    finalArray.push(titleYe);
+    for (i = 0; i < YeArray.length; i++) {
+        everyYalue = (i + 1) + '、' + YeArray[i];
+        finalArray.push(everyYalue);
+    }
+
     console.log(finalArray.join("\n"));
     jieguo = finalArray.join("\n");
     var jieguoEle = document.getElementById("jieguo")
