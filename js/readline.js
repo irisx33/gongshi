@@ -74,13 +74,15 @@ function readline() {
             } else if (zValue.indexOf("月检") > 0) {
                 zData[zValue] = "11";
             } else if (zValue.indexOf("故障") > 0) {
-                zData[zValue] = "8";
+                zData[zValue] = "10";
             } else if (zValue.indexOf("调试") > 0) {
-                zData[zValue] = "7";
+                zData[zValue] = "9";
             } else if (zValue.indexOf("整改") > 0) {
-                zData[zValue] = "6";
+                zData[zValue] = "8";
             } else if (zValue.indexOf("巡视") > 0) {
-                zData[zValue] = "5";
+                zData[zValue] = "7";
+            } else if (zValue.indexOf("排查") > 0) {
+                zData[zValue] = "6";
             } else if (zValue.indexOf("90天") > 0) {
                 zData[zValue] = "4";
             } else {
@@ -99,13 +101,15 @@ function readline() {
             } else if (hValue.indexOf("月检") > 0) {
                 hData[hValue] = "11";
             } else if (hValue.indexOf("故障") > 0) {
-                hData[hValue] = "8";
+                hData[hValue] = "10";
             } else if (hValue.indexOf("调试") > 0) {
-                hData[hValue] = "7";
+                hData[hValue] = "9";
             } else if (hValue.indexOf("整改") > 0) {
-                hData[hValue] = "6";
+                hData[hValue] = "8";
             } else if (hValue.indexOf("巡视") > 0) {
-                hData[hValue] = "5";
+                hData[hValue] = "7";
+            } else if (hValue.indexOf("排查") > 0) {
+                hData[hValue] = "6";
             } else if (hValue.indexOf("90天") > 0) {
                 hData[hValue] = "4";
             } else {
@@ -123,13 +127,15 @@ function readline() {
             } else if (sValue.indexOf("月检") > 0) {
                 sData[sValue] = "11";
             } else if (sValue.indexOf("故障") > 0) {
-                sData[sValue] = "8";
+                sData[sValue] = "10";
             } else if (sValue.indexOf("调试") > 0) {
-                sData[sValue] = "7";
+                sData[sValue] = "9";
             } else if (sValue.indexOf("整改") > 0) {
-                sData[sValue] = "6";
+                sData[sValue] = "8";
             } else if (sValue.indexOf("巡视") > 0) {
-                sData[sValue] = "5";
+                sData[sValue] = "7";
+            } else if (hValue.indexOf("排查") > 0) {
+                hData[hValue] = "6";
             } else if (sValue.indexOf("90天") > 0) {
                 sData[sValue] = "4";
             } else {
@@ -145,7 +151,7 @@ function readline() {
         let sKeysSorted = Object.keys(sData).sort(function (a, b) {
             return sData[b] - sData[a]
         })
-        // console.log(zData);
+        console.log(zData);
         // console.log(zKeysSorted);
         // console.log(hKeysSorted);
         // console.log(hData);
