@@ -134,8 +134,8 @@ function readline() {
                 sData[sValue] = "8";
             } else if (sValue.indexOf("巡视") > 0) {
                 sData[sValue] = "7";
-            } else if (hValue.indexOf("排查") > 0) {
-                hData[hValue] = "6";
+            } else if (sValue.indexOf("排查") > 0) {
+                sData[sValue] = "6";
             } else if (sValue.indexOf("90天") > 0) {
                 sData[sValue] = "4";
             } else {
