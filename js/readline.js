@@ -76,6 +76,8 @@ function readline() {
             } else if (zValue.indexOf("故障") > 0) {
                 zData[zValue] = "8";
             } else if (zValue.indexOf("调试") > 0) {
+                zData[zValue] = "7";
+            } else if (zValue.indexOf("整改") > 0) {
                 zData[zValue] = "6";
             } else if (zValue.indexOf("巡视") > 0) {
                 zData[zValue] = "5";
@@ -90,15 +92,17 @@ function readline() {
             var hValue = houArray[i];
             if (hValue.indexOf("年检") > 0 && hValue.indexOf("半年检") < 0) {
                 hData[hValue] = "14";
-            } else if (zValue.indexOf("半年检") > 0) {
-                zData[zValue] = "13";
-            } else if (zValue.indexOf("季检") > 0) {
-                zData[zValue] = "12";
-            } else if (zValue.indexOf("月检") > 0) {
-                zData[zValue] = "11";
+            } else if (hValue.indexOf("半年检") > 0) {
+                hData[hValue] = "13";
+            } else if (hValue.indexOf("季检") > 0) {
+                hData[hValue] = "12";
+            } else if (hValue.indexOf("月检") > 0) {
+                hData[hValue] = "11";
             } else if (hValue.indexOf("故障") > 0) {
                 hData[hValue] = "8";
             } else if (hValue.indexOf("调试") > 0) {
+                hData[hValue] = "7";
+            } else if (hValue.indexOf("整改") > 0) {
                 hData[hValue] = "6";
             } else if (hValue.indexOf("巡视") > 0) {
                 hData[hValue] = "5";
@@ -113,10 +117,16 @@ function readline() {
             if (sValue.indexOf("年检") > 0 && sValue.indexOf("半年检") < 0) {
                 sData[sValue] = "14";
             } else if (sValue.indexOf("半年检") > 0) {
-                sData[sValue] = "10";
+                sData[sValue] = "13";
+            } else if (sValue.indexOf("季检") > 0) {
+                sData[sValue] = "12";
+            } else if (sValue.indexOf("月检") > 0) {
+                sData[sValue] = "11";
             } else if (sValue.indexOf("故障") > 0) {
                 sData[sValue] = "8";
             } else if (sValue.indexOf("调试") > 0) {
+                sData[sValue] = "7";
+            } else if (sValue.indexOf("整改") > 0) {
                 sData[sValue] = "6";
             } else if (sValue.indexOf("巡视") > 0) {
                 sData[sValue] = "5";
@@ -135,10 +145,11 @@ function readline() {
         let sKeysSorted = Object.keys(sData).sort(function (a, b) {
             return sData[b] - sData[a]
         })
-        console.log(zData);
-        console.log(zKeysSorted);
-        console.log(hKeysSorted);
-        console.log(sKeysSorted);
+        // console.log(zData);
+        // console.log(zKeysSorted);
+        // console.log(hKeysSorted);
+        // console.log(hData);
+        // console.log(sKeysSorted);
         // 数据合并
         for (i = 0; i < zKeysSorted.length; i++) {
             var num = finalArray2.length - 1;
