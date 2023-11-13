@@ -48,7 +48,7 @@ function readline() {
             if (tValue.indexOf("站") > 0) {
                 // console.log(tValue.indexOf("站"));
                 zhanArray.push(tValue);
-            } else if ((tValue.indexOf("车辆段") < 0 && tValue.indexOf("车站") < 0) && (tValue.indexOf("车") > 0 || tValue.indexOf("后海停车场") > 0)) {
+            } else if ((tValue.indexOf("车间") < 0 && tValue.indexOf("车辆段") < 0 && tValue.indexOf("车站") < 0) && (tValue.indexOf("车") > 0 || tValue.indexOf("后海停车场") > 0)) {
                 houArray.push(tValue);
             } else if (tValue.indexOf("蛇口") > 0) {
                 sheArray.push(tValue);
